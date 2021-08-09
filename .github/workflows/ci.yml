@@ -17,9 +17,9 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: "output"
+          source-directory: "."
           destination-github-username: "MSurfer20"
           destination-repository-name: "test3"
           user-email: suyash.mathur@research.iiit.ac.in
           commit-message: Update docs from ORIGIN_COMMIT
-          target-branch: main
+          target-branch: master
