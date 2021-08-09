@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     container: pandoc/latex
     steps:
-      - name: creates output
-        run: sh build.sh
       - name: Push documentation to zulip-openapi
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@main
